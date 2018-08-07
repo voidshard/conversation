@@ -2,12 +2,12 @@ Proof of concept for creating & running conversations graphs via message / reply
 This is to be considered alpha or pre alpha - code was written swiftly & with minimal testing.
 
 
-# getting started
+### getting started
 
 You'll want to have PyQt5 installed. You'll also need to add the /conversation/ directory to your PYTHONPATH.
 
 
-# modules
+### modules
 
 There are four main submodules
  
@@ -29,7 +29,7 @@ There are four main submodules
     only the default Filesystem storage, but this can be extended).
 
 
-# scripts
+### scripts
 
 In addition there are two /bin/ scripts 
   - conversation_builder.py
