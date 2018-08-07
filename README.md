@@ -11,21 +11,21 @@ You'll want to have PyQt5 installed. You'll also need to add the /conversation/ 
 
 There are four main submodules
  
- - backend
-    Provides Storage interface. Storage backends handle how graphs are saved and loaded from
+ - backend:
+    provides Storage interface. Storage backends handle how graphs are saved and loaded from
     some medium. This could be the filesystem, s3, a URL or something else. 
     Also provides a simple Filesystem implementation which saves & loads conversation graph from local disk.
  
- - domain
-    Providers repository wide domain models Node & Graph.
+ - domain:
+    provides repository wide domain models Node & Graph.
     
- - handlers
-    Handlers are intended to actually run & keep track of a conversation state. It's intended that you implement your
+ - handlers:
+    intended to actually run & keep track of a conversation state. It's intended that you implement your
     own handler to run & store conversation state in your medium. Provides base ConversationHandler to implement 
     and an example in-memory handler.
 
- - ui
-    The UI module provides a PyQt5 GUI for creating, loading & saving conversation graphs (at the moment it supports
+ - ui:
+    provides a PyQt5 GUI for creating, loading & saving conversation graphs (at the moment it supports
     only the default Filesystem storage, but this can be extended).
 
 
